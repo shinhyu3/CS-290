@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- Your actual page content here -->
+    <header>
+      <h1>Ajax Activity</h1>
+    </header>
+    <div>Please use one form or the other to find information about the weather in a city.</div>
+    <br>
+    <form>
+        <fieldset>
+            <legend>Weather Information for a city by name</legend>
+            <label for="cityName">City Name:</label>
+            <input type="text" name="cityName" id="cityName">
+            <input type="submit" value="Submit" id="nameSubmit">
+        </fieldset>
+        <br>
+        <fieldset>
+                <legend>Weather Information for a city by zip code</legend>
+                <label for="cityZip">City Zip:</label>
+                <input type="text" name="cityZip" id="cityZip">
+                <input type="submit" value="Submit" id="zipCodeSubmit">
+            </fieldset>
+    </form>
+    <br>
+    <div>
+    <h2>City Weather Results:</h2>
+      <ul>
+        <li><span>Weather information:</span><span id="weatherInfo"></span></li>
+        <li><span>Humidity:</span><span id="humidity"></span></li>
+        <li><span>Current Temperature:</span><span id="temperature"></span></li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <div>
+      <form>
+          <fieldset>
+            <legend>Send via POST</legend>
+            <label for="sendText">Send Text:</label>
+            <input type="text" name="textSend" id="textSend">
+            <input type="submit" value="Submit" id="textSubmit">
+          </fieldset>
+      </form>
+    </div>
+    <div>
+      <br>
+      <span>Returned text:</span><span id="returnedText"></span>
+    </div>
+    <script src="weatherName.js"></script>
+    <script src="weatherZip.js"></script>
+    <script src="ajaxPost.js"></script>
+  </body>
+</html>
