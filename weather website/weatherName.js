@@ -1,4 +1,4 @@
-var apiKey = 'fa7d80c48643dfadde2cced1b1be6ca1';
+var apiKey = 'API KEY GOES HERE';
 
 document.addEventListener('DOMContentLoaded', bindButtons);
     
